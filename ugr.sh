@@ -7,7 +7,7 @@ banner="
 \nBy gjuniioor [gjuniioor\x40protonmail\x2Ech]\n"
 
 
-version="0.9"
+version="1.0"
 
 interactive_mode="n"
 
@@ -19,7 +19,7 @@ Usage:
 \n\nOptions:
 \n\t-h\t\tHelp message
 \n\t-i\t\tSet interactive mode on (default=off)
-\n\t-l <file>\tUse a repositories location file list
+\n\t-l <list>\tUse a repositories location file list
 \n\t-p <path>\tSet a path to focus
 \n\t\t\tIf none argument was seted, default is \"-p current_dir\"
 "
@@ -97,11 +97,9 @@ while getopts ":hil:p:" o;
 			i) interactive_mode="y" ;;
 			l) 
 				list $OPTARG
-				exit 0
 				;;
 			p) 
 				path $OPTARG
-				exit 0
 				;;
 			\?)
 				echo "Invalid option: -$OPTARG" >&2

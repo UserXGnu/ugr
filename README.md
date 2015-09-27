@@ -2,6 +2,16 @@
 
 An utility to update many git repositories. Make a end point to manual work.
 
+## Install
+
+```
+$ git clone https://github.com/gjuniioor/ugr
+$ cd ugr
+$ sudo make install
+```
+
+> If you want remove after install: `$ sudo make remove`
+
 ## Help
 
 ```
